@@ -1,12 +1,27 @@
 import "./App.css";
 import Typography from "./components/MuiTypography";
 import Button from "./components/MuiButton";
+import TextField from "./components/MuiTextField";
+import Select from "./components/MuiSelect";
+import Radio from "./components/MuiRadio";
+import Checkbox from "./components/MuiCheckbox";
+import Switch from "./components/MuiSwitch";
+import Rating from "./components/MuiRating";
+import MuiAutocomplete from "./components/MuiAutocomplete";
+
 
 function App() {
   return (
     <div className="App">
       {/* <Typography /> */}
-      <Button />
+      {/* <Button /> */}
+      {/* <TextField /> */}
+      {/* <Select/> */}
+      {/* <Radio /> */}
+      {/* <Checkbox /> */}
+      {/* <Switch/> */}
+      {/* <Rating /> */}
+      <MuiAutocomplete/>
     </div>
   );
 }
