@@ -18,11 +18,15 @@ import { MuiBreadcrumbs } from "./components/MuiBreadcrumbs";
 import { MuiDrawer } from "./components/MuiDrawer";
 import { MuiSpeedDial } from "./components/MuiSpeedDial";
 import { MuiBottomNavigation } from "./components/MuiBottomNavigation";
-import {MuiAvatar} from './components/MuiAvatar'
-import {MuiBadge} from './components/MuiBadge'
-import {MuiList} from './components/MuiList'
-import {MuiChip} from './components/MuiChip'
-import {MuiTooltip} from './components/MuiTooltip'
+import { MuiAvatar } from "./components/MuiAvatar";
+import { MuiBadge } from "./components/MuiBadge";
+import { MuiList } from "./components/MuiList";
+import { MuiChip } from "./components/MuiChip";
+import { MuiTooltip } from "./components/MuiTooltip";
+import { MuiTable } from "./components/MuiTable";
+import {MuiAlert} from './components/MuiAlert'
+import {MuiSnackbar} from './components/MuiSnackbar'
+import {MuiDialog} from './components/MuiDialog'
 
 function App() {
   return (
@@ -50,9 +54,11 @@ function App() {
       {/* <MuiBadge/> */}
       {/* <MuiList/> */}
       {/* <MuiChip/> */}
-      <MuiTooltip/>
-
-      
+      {/* <MuiTooltip /> */}
+      {/* <MuiTable /> */}
+      {/* <MuiAlert/> */}
+      {/* <MuiSnackbar/> */}
+      <MuiDialog/>
     </div>
   );
 }
