@@ -1,7 +1,8 @@
 import "./App.css";
+import { createTheme, colors, ThemeProvider } from "@mui/material";
 // npm i date-fns @date-io/date-fns
-import AdapterDateFns from '@mui/lab/AdapterDateFns';
-import { LocalizationProvider } from '@mui/x-date-pickers'
+import AdapterDateFns from "@mui/lab/AdapterDateFns";
+import { LocalizationProvider } from "@mui/x-date-pickers";
 import Typography from "./components/MuiTypography";
 import Button from "./components/MuiButton";
 import TextField from "./components/MuiTextField";
@@ -34,10 +35,29 @@ import { MuiProgress } from "./components/MuiProgress";
 import { MuiSkeleton } from "./components/MuiSkeleton";
 import MuiLoadingButton from "./components/MuiLoadingButton";
 import MuiPicker from "./components/MuiPicker";
-import MuiTabs from './components/MuiTabs'
+import MuiTabs from "./components/MuiTabs";
+import MuiTimeline from "./components/MuiTimeline";
+import MuiMasonry from "./components/MuiMasonry";
+import MuiResponsiveness from "./components/MuiResponsiveness";
 
+const theme = createTheme({
+  status: {
+    danger: '#e53e3e'
+  },
+
+  palette: {
+    secondary: {
+      main: colors.orange[500],
+    },
+    neutral: {
+      main: colors.grey[500],
+      darker: colors.grey[700]
+    }
+  },
+});
 function App() {
   return (
+    <ThemeProvider theme={theme}>
       <div className="App">
         {/* <Typography /> */}
         {/* <Button /> */}
@@ -71,9 +91,13 @@ function App() {
         {/* <MuiSkeleton/> */}
         {/* <MuiLoadingButton/> */}
         {/* <MuiPicker /> */}
-        <MuiTabs/>
+        {/* <MuiTabs/> */}
+        {/* <MuiTimeline/> */}
+        {/* <MuiMasonry/> */}
+        <MuiResponsiveness />
       </div>
-   );
+    </ThemeProvider>
+  );
 }
 
 export default App;
